@@ -28,8 +28,8 @@ window.onscroll = () => {
     }
     let header = document.querySelector("header");
     if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
     ) {
       showBtn.style.display = "block";
       window.setTimeout(() => {
@@ -67,6 +67,21 @@ const typed = new Typed(".multiple-text", {
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
+});
+
+// Alert Message
+document.querySelector(".alert").addEventListener("click", () => {
+  iziToast.show({
+    title: "Disabled",
+    message: "Unfortunately, this feature cannot be used yet.",
+    icon: "bx bxs-message-alt-x",
+    titleColor: "#a70000",
+    messageColor: "#ff5252",
+    iconColor: "#a70000",
+    backgroundColor: "rgba(255,186,186, .9)",
+    displayMode: 1,
+    timeout: 2000,
+  });
 });
 
 // Restriction
