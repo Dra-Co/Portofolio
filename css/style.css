@@ -363,6 +363,10 @@ span{
     color: var(--second-bg-color);
 }
 
+.alert{
+    text-align: center;
+}
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
