@@ -28,8 +28,8 @@ window.onscroll = () => {
     }
     let header = document.querySelector("header");
     if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
     ) {
       showBtn.style.display = "block";
       window.setTimeout(() => {
@@ -65,15 +65,8 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(
-  ".home-img, .services-container, .portofolio-box, .contact form",
-  {
-    origin: "bottom",
-  }
-);
-ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+//AOS
+AOS.init();
 
 // Typed.js
 const typed = new Typed(".multiple-text", {
