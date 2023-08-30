@@ -28,8 +28,8 @@ window.onscroll = () => {
     }
     let header = document.querySelector("header");
     if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
     ) {
       showBtn.style.display = "block";
       window.setTimeout(() => {
