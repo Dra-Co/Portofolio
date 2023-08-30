@@ -57,14 +57,6 @@ showBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
-// ScrollReveal.js
-ScrollReveal({
-  reset: true,
-  distance: "80px",
-  duration: 2000,
-  delay: 200,
-});
-
 //AOS
 AOS.init();
 
